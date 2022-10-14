@@ -5,17 +5,20 @@ var c = canvas.getContext("2d");
 var eventKey;
 var charPX = 500;
 var charPY = 500;
+var check = true;
 document.addEventListener("keypress", e => {
     debug();
     eventKey = event.key;
-    if (eventKey == "a"){
+    if (eventKey == "a" && !check){
         charPX -= 5;
+        check = false;
     }
-    if (eventKey == "d"){
+    if (eventKey == "d" && !check){
         charPX += 5;
+        check = false;
     }
     else{
-        return e;
+        check = true;
     }
 });
 
