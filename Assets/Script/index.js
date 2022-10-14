@@ -13,7 +13,7 @@ document.addEventListener("keypress", e => {
 
 function draw() {
     requestAnimationFrame(draw);
-    c.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    //c.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
 }
 
