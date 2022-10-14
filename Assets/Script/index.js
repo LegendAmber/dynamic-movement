@@ -5,23 +5,19 @@ var c = canvas.getContext("2d");
 var eventKey;
 var charPX = 500;
 var charPY = 500;
-var check = true;
 document.addEventListener("keypress", e => {
     debug();
     eventKey = event.key;
-    if (eventKey == "a" && !check){
+    if (eventKey == "a" ){
         charPX -= 5;
-        check = false;
     }
-    if (eventKey == "d" && !check){
+    if (eventKey == "d"){
         charPX += 5;
-        check = false;
     }
     else{
-        check = true;
+        charPX = 500;
     }
 });
-
 function draw() {
     requestAnimationFrame(draw);
     c.clearRect(0, 0, window.innerWidth, window.innerHeight);
