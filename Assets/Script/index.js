@@ -3,6 +3,10 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 var c = canvas.getContext("2d");
 
+document.addEventListener("keypress", e => {
+    console.log(event.value);
+});
+
 function draw() {
     requestAnimationFrame(draw);
     c.clearRect(0, 0, window.innerWidth, window.innerHeight);
