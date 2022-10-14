@@ -11,8 +11,11 @@ document.addEventListener("keypress", e => {
     if (eventKey == "a"){
         charPX -= 5;
     }
-    else if (eventKey == "d"){
+    if (eventKey == "d"){
         charPX += 5;
+    }
+    if (eventKey == "a" && eventKey == "d"){
+        charPX = charPX;
     }
 });
 
