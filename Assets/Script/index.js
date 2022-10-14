@@ -11,14 +11,14 @@ document.addEventListener("keypress", e => {
     if (eventKey == "a"){
         charPX -= 5;
     }
-    if (eventKey == "d"){
+    else if (eventKey == "d"){
         charPX += 5;
     }
 });
 
 function draw() {
     requestAnimationFrame(draw);
-    //c.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    c.clearRect(0, 0, window.innerWidth, window.innerHeight);
     c.beginPath();
     c.fillStyle = "black";
     c.fillRect(charPX, charPY, 20, 20);
