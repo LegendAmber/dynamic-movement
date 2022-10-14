@@ -6,7 +6,7 @@ var c = canvas.getContext("2d");
 document.addEventListener("keypress", e => {
     c.beginPath();
     c.fillStyle = "black";
-    c.fillText(event.value, 200, 200);
+    c.fillText(event.key, 200, 200);
     c.fill();
 });
 
